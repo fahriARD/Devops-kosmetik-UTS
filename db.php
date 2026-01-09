@@ -1,8 +1,8 @@
 <?php
-$host = getenv('DB_HOST') ?: "db";
-$user = getenv('DB_USER') ?: "phpuser";
-$pass = getenv('DB_PASSWORD') ?: "phppassword";
-$dbname = getenv('DB_NAME') ?: "db_kosmetik";
+$host = getenv('DB_HOST') ?: "mysql";
+$user = getenv('DB_USER') ?: "root";
+$pass = getenv('DB_PASSWORD') ?: "root";
+$dbname = getenv('DB_NAME') ?: "produk_db";
 
 $conn = new mysqli($host, $user, $pass);
 
