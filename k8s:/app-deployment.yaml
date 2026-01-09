@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: php-app
+  template:
+    metadata:
+      labels:
+        app: php-app
+    spec:
+      containers:
+      - name: php-app
+        image: nonoyadino/php-k8s-app:latest
+        ports:
+          - containerPort: 80s
+        envFrom:
+          - configMapRef:
+              name: db-config
+        resources:
+          requests:
+            cpu: "200m"
+          limits:
+            cpu: "500m"
