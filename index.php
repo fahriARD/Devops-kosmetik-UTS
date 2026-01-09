@@ -315,7 +315,7 @@ $result = $conn->query("SELECT * FROM products ORDER BY id DESC");
     <div class="container">
         <div class="header">
             <h1>💄 Stock Produk Kosmetik</h1>
-            <p>Kelola inventaris produk kecantikan Anda dengan mudah</p>
+            <p>Kelola inventaris produk kecantikan Anda dengan mudah!</p>
         </div>
 
         <div class="content">
