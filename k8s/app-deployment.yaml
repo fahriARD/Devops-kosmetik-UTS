@@ -22,6 +22,6 @@ spec:
               name: db-config
         resources:
           requests:
-            cpu: "200m"
+            cpu: 200m
           limits:
-            cpu: "500m"
+            cpu: 500m
