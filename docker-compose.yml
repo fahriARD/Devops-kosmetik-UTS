@@ -14,6 +14,7 @@ services:
   web:
     build: .
     container_name: dockerkosmetik_fe
+    platform: linux/amd64
     ports:
       - "8080:80"
     environment:
