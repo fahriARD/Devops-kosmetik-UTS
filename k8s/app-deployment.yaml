@@ -16,7 +16,7 @@ spec:
       - name: php-app
         image: nonoyadino/php-k8s-app:latest
         ports:
-          - containerPort: 80s
+          - containerPort: 80
         envFrom:
           - configMapRef:
               name: db-config
